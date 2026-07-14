@@ -1,4 +1,5 @@
 /* ===================== RESET ===================== */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 *{
@@ -12,7 +13,9 @@
 
 body{
     background:#f6f6f6;
+    overflow-x:hidden; /* remove rolagem horizontal */
 }
+
 
 /* ===================== HEADER ===================== */
 
@@ -25,16 +28,15 @@ header{
     align-items:center;
 
     position:relative;
-    overflow:visible;  
+    overflow:visible;
 }
 
 .logo{
     position:absolute;
-
     width:118px;
 
     left:70px;
-    top:10px; 
+    top:10px;
 
     z-index:100;
 }
@@ -42,44 +44,197 @@ header{
 .navmenu{
     display:flex;
     gap:55px;
-    margin-left: 260px;
-    font-size: 14px;
+
+    margin-left:260px;
+
+    font-size:14px;
 }
 
 .navmenu a{
-    display: inline-block; /* ou block */
-    color:#FFFFFF;
+    display:inline-block;
+
+    color:#fff;
     font-weight:500;
-    transition: transform .3s ease, color .3s ease;
+
+    transition:.3s;
 }
 
 .navmenu a:hover{
     color:#9e9e9e;
-    transform: translateY(-5px);
+    transform:translateY(-5px);
 }
- 
+
+
+/* ===================== ÍCONES HEADER ===================== */
 
 .icons-menu{
-  position:absolute;
-  display:flex;
-  margin-left: 1200px;
-  gap:20px;
+    position:absolute;
+
+    display:flex;
+    gap:20px;
+
+    right:80px;
 }
 
 .icons-menu img{
-  width: 23px;
-  height: auto;
-  transition: transform .3s ease, color .3s ease;
+    width:23px;
+    height:auto;
+
+    transition:.3s;
 }
 
 .icons-menu img:hover{
-    color:#9e9e9e;
-    transform: translateY(-5px);
+    transform:translateY(-5px);
 }
 
-/* Banner */
+
+/* ===================== BANNER ===================== */
 
 .banner{
     width:100%;
     display:block;
+}
+
+.banner-btn{
+    position:absolute;
+
+    left:90px;
+    top:407px;
+
+    padding:15px 38px;
+
+    border:2px solid #fff;
+    border-radius:40px;
+
+    color:#fff;
+    background:#05132c;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.banner-btn:hover{
+    background:#fff;
+    color:#05132c;
+}
+
+
+/* ===================== TÍTULO CATEGORIAS ===================== */
+
+.categorias-texto{
+    text-align:center;
+    margin-top:55px;
+}
+
+.categorias-texto h4{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:15px;
+
+    font-size:14px;
+    font-weight:600;
+
+    color:#ff914d;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+}
+
+.categorias-texto h4::before,
+.categorias-texto h4::after{
+    content:"";
+
+    width:45px;
+    height:1px;
+
+    background:#ff914d;
+
+    border-radius:2px;
+}
+
+.categorias-texto h2{
+    font-size:38px;
+    font-weight:600;
+
+    color:#05132c;
+}
+
+
+/* ===================== CARROSSEL ===================== */
+
+.carrossel{
+    width:100%;
+
+    overflow:hidden;
+
+    margin-top:60px;
+
+    padding:25px 0;
+}
+
+.track{
+    display:flex;
+
+    gap:40px;
+
+    width:max-content;
+
+    animation:deslizar 45s linear infinite;
+
+    will-change:transform;
+}
+
+.item{
+    width:180px;
+
+    text-align:center;
+
+    flex-shrink:0;
+}
+
+.item img{
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    transition:.3s;
+}
+
+.item img:hover{
+    transform:scale(1.05);
+}
+
+.item h3{
+    margin-top:15px;
+
+    font-size:16px;
+
+    color:#05132c;
+}
+
+.item p{
+    font-size:12px;
+
+    color:#777;
+}
+
+
+/* ===================== ANIMAÇÃO INFINITA ===================== */
+
+@keyframes deslizar{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(calc(-50% - 20px));
+    }
 }
