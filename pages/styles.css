@@ -172,7 +172,7 @@ header{
 
     overflow:hidden;
 
-    margin-top:60px;
+    margin-top:30px;
 
     padding:25px 0;
 }
@@ -184,7 +184,7 @@ header{
 
     width:max-content;
 
-    animation:deslizar 45s linear infinite;
+    animation:deslizar 90s linear infinite;
 
     will-change:transform;
 }
@@ -214,20 +214,23 @@ header{
 
 .item h3{
     margin-top:15px;
-
-    font-size:16px;
-
+    font-size:15px;
     color:#05132c;
+    font-weight:600;
 }
 
 .item p{
+    margin-top:5px;
     font-size:12px;
-
+    line-height:1.4;
     color:#777;
+    max-width:200px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 
-/* ===================== ANIMAÇÃO INFINITA ===================== */
+/* ===================== ANIMAÇÃO ===================== */
 
 @keyframes deslizar{
     from{
@@ -237,4 +240,91 @@ header{
     to{
         transform:translateX(calc(-50% - 20px));
     }
+}
+
+/* ===================== DESTAQUES ===================== */
+
+.destaques{
+    background:#07162e;
+    padding: 1px 5%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h4{
+    color:#ff914d;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.titulo h2{
+    color:#fff;
+    font-size:42px;
+}
+
+.produtos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:50px;
+}
+
+.card-produto{
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    transition:.3s;
+    transition: transform .3s ease;
+}
+
+.card-produto:hover{
+    transform: scale(1.02);
+}
+
+.card-produto img{
+    width:250px;
+    height:250px;
+    border-radius:14px;
+    object-fit:cover;
+    display:block;
+    margin: 7px auto;
+}
+
+.info{
+    padding:10px;
+}
+
+.info h3{
+    margin-top:-2px;      /* distância da imagem */
+    margin-bottom:11px;   /* distância até o texto */
+
+    color:#05132c;
+    font-size:18px;
+    text-align:center;
+}
+
+.info p{
+    color:#666;
+    margin:8px 0 20px;
+}
+
+.info a{
+    display:block;
+    text-align:center;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    background:#ff914d ;
+    color:#fff;
+    font-weight:600;
+    transition: transform .3s ease;
+
+}
+
+.info a:hover{
+    transform: scale(1.02);
 }
