@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const banner = document.querySelector(".banner");
 
     const imagens = [
+        "Image/bn1.png",
         "Image/bn2.png",
          "Image/bn3.png"
     ];

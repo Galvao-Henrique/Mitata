@@ -1,22 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MITATA</title>
 
     <!-- Links -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
     <header>
-
-      <img src="Image/logo.png" alt="Logo" class="logo">
+      <img src="Image/logo.png" alt="Logo" class="logo" />
 
       <ul class="navmenu">
         <li><a href="#">Início</a></li>
@@ -27,255 +24,392 @@
       </ul>
 
       <div class="icons-menu">
-        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWUlEQVR4nO2YPU9UURCGjxi3W6JIRCjBih7wRyAfiUYKgoW/AqSihfgfSIyuJVArmFgCWpjgFyExkWin5bKYh0w4xMPsWd1l51y45D7NTe7ueWfmfMzMuc4VFBQU5BbgJjADvAQ2ge9A1T83/Xv5vctdJIA7QAWo0RzyvxfAwHk7XgKeAgecDVmdJeDaeW2X19jwFriVpfPdwJcGzmwBs8AQ0Cuz65/DwByw3WDcZ9HNatu8iTjwEbjXpMYY8CmisZ58O/k9r1kByi3qlIG1iNZi6mxzEHG+44x6HZEgqkC/vffHBiuRbVNuU7PT7/+Q53Zen846Os+PGmmPK92a2LPQDo1IBQ3ZMtbX2WnaGRuQNiBk1lj/idKvOGMD0suEDBnrjyj9HWdsYF8Z6DHW71P6v52xAUlvIaUEBTKk5owNSEsc0pt4BX6kPgPDic/Ah9RZaM5Yf17pP8tNHQCuAO+V/mMr/RMjXZFKPGakPal0q8BtC+3/9ULSEne2qXkd+Kp0l+28Pm1sIJJOV9voRq/68Xr2B+29/2tU7rCatVZXws+8dl5YSOa8NyxXxA3qkZZ4oskDK3t+lzgzSQMI7sS6hz/hnW/MRnxxKvk78V3/XmcbzSEwlUUQcj94RRoOzdvpf2ynxcjBbhYZtwA88k6H1DJZCR9Iv1wDW/gyJ44vh9lGnKV+fHZBeCduyNL7erED/AL+AD+lt5H2QCpsoyLFRQiiXYAHkSCyORNWcEmCuH8ZgphqcCbGXV4AHkaC+ObyBPVB7Lu8wfHXuz2Zfat7SEFBQYEz5wgewfzFJZ/56gAAAABJRU5ErkJggg==" alt="search"></a>
-        <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5ElEQVR4nO2YTSsFURjHD4oiC8mOLCSslFKUpVLsLWxY+ATEZxBl4QtcW67YsPABhPsR5G0peQ95/+lcR02Pe801c+bOmcyvZnNv/f//Z8458zwzSqWkpOQB3inME9CkXAd4ozgzynWA118KOAWqlMsAL/zOsEoSwDJucAQMBimgB3c4DroKOdzgMGgBE7jBdNACaoBzITYeSKx0z3Xhd6xzhBGcF4L7VhN7APqBD+E3qsIAtBZocr2hRAv7VAA7wmdP/25DfEsIZ6yk9gCMFdj7A8oGuokJ4Ueg0Yq4yutX6yeN8MjaXt6DqOYjYFZoPwPttvS/TWaimI+ABuBSaC/aSf3T6MH2fAQsCc1rm9tTmmWE2WZIvTazXbxM2UvsPx99hNmr2G5aDsxHo5GGNwVMRhR+10rTKqGAbAThb4GucoQfsRz82pyDznKErzWHzEvO+Xflb4A5EV5/BOhWSQCoB+5FAQsqKfA1p3s5A+pUUgC6KTPKcgGVwEliC9AAQyV8/HK3AA3QB2ybxpO8AlLiBmgB1oA7c20AHa7olWImX/00V/q/uPV8MXeqGKtx6/lilrgYt3HrhTW8iVvPF3PAirESt54v+ulgDpjkAmiOW+8vT45V04n1tRLGDMt6KSn/kU++QMV8nnzNYwAAAABJRU5ErkJggg==" alt="shopping-cart--v1"></a>
+        <a href="#"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWUlEQVR4nO2YPU9UURCGjxi3W6JIRCjBih7wRyAfiUYKgoW/AqSihfgfSIyuJVArmFgCWpjgFyExkWin5bKYh0w4xMPsWd1l51y45D7NTe7ueWfmfMzMuc4VFBQU5BbgJjADvAQ2ge9A1T83/Xv5vctdJIA7QAWo0RzyvxfAwHk7XgKeAgecDVmdJeDaeW2X19jwFriVpfPdwJcGzmwBs8AQ0Cuz65/DwByw3WDcZ9HNatu8iTjwEbjXpMYY8CmisZ58O/k9r1kByi3qlIG1iNZi6mxzEHG+44x6HZEgqkC/vffHBiuRbVNuU7PT7/+Q53Zen846Os+PGmmPK92a2LPQDo1IBQ3ZMtbX2WnaGRuQNiBk1lj/idKvOGMD0suEDBnrjyj9HWdsYF8Z6DHW71P6v52xAUlvIaUEBTKk5owNSEsc0pt4BX6kPgPDic/Ah9RZaM5Yf17pP8tNHQCuAO+V/mMr/RMjXZFKPGakPal0q8BtC+3/9ULSEne2qXkd+Kp0l+28Pm1sIJJOV9voRq/68Xr2B+29/2tU7rCatVZXws+8dl5YSOa8NyxXxA3qkZZ4oskDK3t+lzgzSQMI7sS6hz/hnW/MRnxxKvk78V3/XmcbzSEwlUUQcj94RRoOzdvpf2ynxcjBbhYZtwA88k6H1DJZCR9Iv1wDW/gyJ44vh9lGnKV+fHZBeCduyNL7erED/AL+AD+lt5H2QCpsoyLFRQiiXYAHkSCyORNWcEmCuH8ZgphqcCbGXV4AHkaC+ObyBPVB7Lu8wfHXuz2Zfat7SEFBQYEz5wgewfzFJZ/56gAAAABJRU5ErkJggg=="
+            alt="search"
+        /></a>
+        <a href="#"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5ElEQVR4nO2YTSsFURjHD4oiC8mOLCSslFKUpVLsLWxY+ATEZxBl4QtcW67YsPABhPsR5G0peQ95/+lcR02Pe801c+bOmcyvZnNv/f//Z8458zwzSqWkpOQB3inME9CkXAd4ozgzynWA118KOAWqlMsAL/zOsEoSwDJucAQMBimgB3c4DroKOdzgMGgBE7jBdNACaoBzITYeSKx0z3Xhd6xzhBGcF4L7VhN7APqBD+E3qsIAtBZocr2hRAv7VAA7wmdP/25DfEsIZ6yk9gCMFdj7A8oGuokJ4Ueg0Yq4yutX6yeN8MjaXt6DqOYjYFZoPwPttvS/TWaimI+ABuBSaC/aSf3T6MH2fAQsCc1rm9tTmmWE2WZIvTazXbxM2UvsPx99hNmr2G5aDsxHo5GGNwVMRhR+10rTKqGAbAThb4GucoQfsRz82pyDznKErzWHzEvO+Xflb4A5EV5/BOhWSQCoB+5FAQsqKfA1p3s5A+pUUgC6KTPKcgGVwEliC9AAQyV8/HK3AA3QB2ybxpO8AlLiBmgB1oA7c20AHa7olWImX/00V/q/uPV8MXeqGKtx6/lilrgYt3HrhTW8iVvPF3PAirESt54v+ulgDpjkAmiOW+8vT45V04n1tRLGDMt6KSn/kU++QMV8nnzNYwAAAABJRU5ErkJggg=="
+            alt="shopping-cart--v1"
+        /></a>
       </div>
-
     </header>
 
     <!-- Banner -->
-    <img src="Image/bn1.png" class="banner">
+    <img src="Image/bn1.png" class="banner" />
 
-    <a href="#" class="banner-btn">
-        VER PRODUTOS
-    </a>
+    <a href="#" class="banner-btn"> VER PRODUTOS <i class="ph ph-arrow-right"></i> </a>
 
     <!-- Categorias -->
     <section class="categorias">
-    
-    <div class="categorias-texto">
-    <h4>NOSSAS CATEGORIAS</h4>
-    <h2>Encontre o corte ideal</h2>
-    </div>
+      <div class="categorias-texto">
+        <h4>NOSSAS CATEGORIAS</h4>
+        <h2>Encontre o corte ideal</h2>
+      </div>
+    </section>
 
-  <div class="carrossel">
-
-    <div class="track">
-
+    <!-- Carrossel -->
+    <div class="carrossel">
+      <div class="track">
         <!-- Primeira sequência -->
-      <div class="item">
-    <img src="Image/ccr/1asa.png">
-    <h3>ASA</h3>
-    <p>Perfeita para grelhar</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/1asa.png" />
+          <h3>ASA</h3>
+          <p>Perfeita para grelhar</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/2cost.png">
-    <h3>COSTELA</h3>
-    <p>Maciez para a brasa</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/2cost.png" />
+          <h3>COSTELA</h3>
+          <p>Maciez para a brasa</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/3.png">
-    <h3>COXA C/ SOBRECOXA</h3>
-    <p>Textura suculenta e macia</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/3.png" />
+          <h3>COXA C/ SOBRECOXA</h3>
+          <p>Textura suculenta e macia</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/4fig.png">
-    <h3>FÍGADO</h3>
-    <p>Tradicional e nutritivo</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/4fig.png" />
+          <h3>FÍGADO</h3>
+          <p>Tradicional e nutritivo</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/5Fil.png">
-    <h3>FILÉ DE FRANGO</h3>
-    <p>Leve e versátil</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/5Fil.png" />
+          <h3>FILÉ DE FRANGO</h3>
+          <p>Leve e versátil</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/7lin.png">
-    <h3>LÍNGUA BOVINA</h3>
-    <p>Um corte especial</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/7lin.png" />
+          <h3>LÍNGUA BOVINA</h3>
+          <p>Um corte especial</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/8Lin.png">
-    <h3>LINGUIÇA</h3>
-    <p>Clássica do churrasco</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/8Lin.png" />
+          <h3>LINGUIÇA</h3>
+          <p>Clássica do churrasco</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/9nug.png">
-    <h3>NUGGETS</h3>
-    <p>Praticidade no dia a dia</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/9nug.png" />
+          <h3>NUGGETS</h3>
+          <p>Praticidade no dia a dia</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/10pe.png">
-    <h3>PÉ SUÍNO</h3>
-    <p>Receita tradicional</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/10pe.png" />
+          <h3>PÉ SUÍNO</h3>
+          <p>Receita tradicional</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/11peit.png">
-    <h3>PEITO DE FRANGO</h3>
-    <p>Qualidade e leveza</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/11peit.png" />
+          <h3>PEITO DE FRANGO</h3>
+          <p>Qualidade e leveza</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/6FilEmp.png">
-    <h3>FILÉ DE FRANGO EMPANADO</h3>
-    <p>Crocante e prático</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/6FilEmp.png" />
+          <h3>FILÉ DE FRANGO EMPANADO</h3>
+          <p>Crocante e prático</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/12peitoC.png">
-    <h3>PEITO DE FRANGO C/ OSSO</h3>
-    <p>Mais suculência no preparo</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/12peitoC.png" />
+          <h3>PEITO DE FRANGO C/ OSSO</h3>
+          <p>Mais suculência no preparo</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/13pern.png">
-    <h3>PERNIL SUÍNO</h3>
-    <p>Ideal para assados</p>
-</div>
-
-
+        <div class="item">
+          <img src="Image/ccr/13pern.png" />
+          <h3>PERNIL SUÍNO</h3>
+          <p>Ideal para assados</p>
+        </div>
 
         <!-- Segunda sequência (cópia para loop infinito) -->
 
-      <div class="item">
-    <img src="Image/ccr/1asa.png">
-    <h3>ASA</h3>
-    <p>Perfeita para grelhar</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/1asa.png" />
+          <h3>ASA</h3>
+          <p>Perfeita para grelhar</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/2cost.png">
-    <h3>COSTELA</h3>
-    <p>Maciez para a brasa</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/2cost.png" />
+          <h3>COSTELA</h3>
+          <p>Maciez para a brasa</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/3.png">
-    <h3>COXA C/ SOBRECOXA</h3>
-    <p>Textura suculenta e macia</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/3.png" />
+          <h3>COXA C/ SOBRECOXA</h3>
+          <p>Textura suculenta e macia</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/4fig.png">
-    <h3>FÍGADO</h3>
-    <p>Tradicional e nutritivo</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/4fig.png" />
+          <h3>FÍGADO</h3>
+          <p>Tradicional e nutritivo</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/5Fil.png">
-    <h3>FILÉ DE FRANGO</h3>
-    <p>Leve e versátil</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/5Fil.png" />
+          <h3>FILÉ DE FRANGO</h3>
+          <p>Leve e versátil</p>
+        </div>
 
+        <div class="item">
+          <img src="Image/ccr/7lin.png" />
+          <h3>LÍNGUA BOVINA</h3>
+          <p>Um corte especial</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/7lin.png">
-    <h3>LÍNGUA BOVINA</h3>
-    <p>Um corte especial</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/8Lin.png" />
+          <h3>LINGUIÇA</h3>
+          <p>Clássica do churrasco</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/8Lin.png">
-    <h3>LINGUIÇA</h3>
-    <p>Clássica do churrasco</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/9nug.png" />
+          <h3>NUGGETS</h3>
+          <p>Praticidade no dia a dia</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/9nug.png">
-    <h3>NUGGETS</h3>
-    <p>Praticidade no dia a dia</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/10pe.png" />
+          <h3>PÉ SUÍNO</h3>
+          <p>Receita tradicional</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/10pe.png">
-    <h3>PÉ SUÍNO</h3>
-    <p>Receita tradicional</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/11peit.png" />
+          <h3>PEITO DE FRANGO</h3>
+          <p>Qualidade e leveza</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/11peit.png">
-    <h3>PEITO DE FRANGO</h3>
-    <p>Qualidade e leveza</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/6FilEmp.png" />
+          <h3>FILÉ DE FRANGO EMPANADO</h3>
+          <p>Crocante e prático</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/6FilEmp.png">
-    <h3>FILÉ DE FRANGO EMPANADO</h3>
-    <p>Crocante e prático</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/12peitoC.png" />
+          <h3>PEITO DE FRANGO C/ OSSO</h3>
+          <p>Mais suculência no preparo</p>
+        </div>
 
-<div class="item">
-    <img src="Image/ccr/12peitoC.png">
-    <h3>PEITO DE FRANGO C/ OSSO</h3>
-    <p>Mais suculência no preparo</p>
-</div>
-
-<div class="item">
-    <img src="Image/ccr/13pern.png">
-    <h3>PERNIL SUÍNO</h3>
-    <p>Ideal para assados</p>
-</div>
+        <div class="item">
+          <img src="Image/ccr/13pern.png" />
+          <h3>PERNIL SUÍNO</h3>
+          <p>Ideal para assados</p>
+        </div>
+      </div>
     </div>
 
-  </div>
-
-  <section class="destaques">
-
-    <div class="titulo">
-        <div class="categorias-texto">
-            <h4>NOSSOS DESTAQUES</h4>
-            <h2>Cortes mais vendidos</h2>
+    <!-- Destaques -->
+    <section class="destaques">
+      <div class="titulo">
+        <div class="categorias-texto1">
+          <h4>NOSSOS DESTAQUES</h4>
+          <h2>Cortes mais vendidos</h2>
         </div>
-    </div>
+      </div>
 
-    <div class="produtos">
-
+      <div class="produtos">
+        <!-- Produto -->
         <div class="card-produto">
-            <img src="Image/C1a.png">
+          <img src="Image/C1a.png" alt="Pá de Boi" />
 
-            <div class="info">
-                <h3>BOI CASADO</h3>
-                
+          <div class="info">
+            <h3>Pá de Boi</h3>
 
-                <a href="#">SOLICITAR ORÇAMENTO</a>
+            <div class="descricao">
+              <i class="ph ph-package"></i>
+              <span>Caixa • A granel</span>
             </div>
+
+            <a href="#" class="btn-orcamento">
+              Solicitar orçamento
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- Produto -->
         <div class="card-produto">
-            <img src="Image/C2a.png">
+          <img src="Image/C2a.png" alt="Traseiro de Boi" />
 
-            <div class="info">
-                <h3>DIANTEIRO DE BOI</h3>
-                
+          <div class="info">
+            <h3>Traseiro de Boi</h3>
 
-                <a href="#">SOLICITAR ORÇAMENTO</a>
+            <div class="descricao">
+              <i class="ph ph-package"></i>
+              <span>Caixa • A granel</span>
             </div>
+
+            <a href="#" class="btn-orcamento">
+              Solicitar orçamento
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- Produto -->
         <div class="card-produto">
-            <img src="Image/C3a.png">
+          <img src="Image/C3a.png" alt="Dianteiro de Boi" />
 
-            <div class="info">
-                <h3>PA DE BOI</h3>
-                
+          <div class="info">
+            <h3>Dianteiro de Boi</h3>
 
-                <a href="#">SOLICITAR ORÇAMENTO</a>
+            <div class="descricao">
+              <i class="ph ph-package"></i>
+              <span>Caixa • A granel</span>
             </div>
+
+            <a href="#" class="btn-orcamento">
+              Solicitar orçamento
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
+        <!-- Produto -->
         <div class="card-produto">
-            <img src="Image/C4a.png">
+          <img src="Image/C4a.png" alt="Boi Casado" />
 
-            <div class="info">
-                <h3>TRASEIRO DE BOI</h3>
-                
+          <div class="info">
+            <h3>Boi Casado</h3>
 
-                <a href="#">SOLICITAR ORÇAMENTO</a>
+            <div class="descricao">
+              <i class="ph ph-package"></i>
+              <span>Caixa • A granel</span>
             </div>
+
+            <a href="#" class="btn-orcamento">
+              Solicitar orçamento
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-</section>
+    <!-- ===================== VANTAGENS ===================== -->
 
-</section>
+    <section class="vantagens">
+      <div class="titulo-1a">
+        <h4>QUALIDADE QUE FORTLECE SEU NEGÓCIO</h4>
+        <h2>TUDO QUE SEU EMPREENDIMENTO PRECISA</h2>
+      </div>
 
-</body>
+      <div class="vantagens-container">
+        <div class="vantagens-beneficios">
+          <div class="vantagens-itens">
+            <div class="vantagem-item">
+              <i class="ph ph-currency-dollar"></i>
+              <h3>PREÇOS COMPETITIVOS</h3>
+              <p>E CONDIÇÕES ESPECIAIS</p>
+            </div>
+
+            <div class="vantagem-item">
+              <i class="ph ph-package"></i>
+              <h3>
+                VOLUME <br />
+                IDEAL
+              </h3>
+              <p>PARA O SEU NEGÓCIO</p>
+            </div>
+
+            <div class="vantagem-item">
+              <i class="ph ph-truck"></i>
+              <h3>ENTREGAS PROGRAMADAS</h3>
+              <p>PONTUAIS E FLEXÍVEIS</p>
+            </div>
+
+            <div class="vantagem-item">
+              <i class="ph ph-shield-check"></i>
+              <h3>QUALIDADE GARANTIDA</h3>
+              <p>DO CAMPO À SUA MESA</p>
+            </div>
+
+            <div class="vantagem-item">
+              <i class="ph ph-headset"></i>
+              <h3>ATENDIMENTO EXCLUSIVO</h3>
+              <p>
+                PARA O SEU <br />
+                CNPJ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vantagens-cta">
+          <h3>SEJA NOSSO PARCEIRO</h3>
+
+          <p>Condições exclusivas para atacadistas.</p>
+
+          <a href="#" class="vantagens-botao"> FALE COM UM CONSULTOR </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== footer ===================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-col">
+          <img src="Image/logo.png" alt="Mitata" class="footer-logo" />
+
+          <p>Há mais de 50 anos oferecendo carnes de qualidade.</p>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-col">
+          <h3>CONTATO</h3>
+
+          <ul>
+            <li>São José dos Campos - SP</li>
+            <li>(12) 99999-9999</li>
+            <li>contato@mitata.com.br</li>
+          </ul>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer-col">
+          <h3>INSTITUCIONAL</h3>
+
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Redes -->
+        <div class="footer-col">
+          <h3>REDES SOCIAIS</h3>
+
+          <div class="footer-social">
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-whatsapp-logo"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Mitata Alimentos • Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
