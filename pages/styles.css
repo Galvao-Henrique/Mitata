@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
-}
+}                  
 
 body {
   background: #fff;
@@ -53,6 +53,7 @@ header {
 
 .navmenu a {
   display: inline-block;
+  position: relative;
 
   color: white;
   font-weight: 600;
@@ -60,9 +61,26 @@ header {
   transition: 0.3s;
 }
 
+.navmenu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #a7231b;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
 .navmenu a:hover {
-  color: #ff0d00;
+  color: #a7231b;
   transform: translateY(-5px);
+}
+
+.navmenu a:hover::after {
+  transform: scaleX(1);
 }
 
 /* ===================== ÍCONES HEADER ===================== */
@@ -163,18 +181,16 @@ header {
 
 .card{
     background:#fff;
-    border:1px solid #ececec;
     border-radius:18px;
     overflow:hidden;
     transition:.3s;
     cursor:pointer;
-    border: 1px solid rgba(255, 31, 31, 0.35);
+    border: 1px solid #a7231b;
 }
 
 .card:hover{
     transform: scale(1.02);
     box-shadow:0 15px 35px rgba(0,0,0,.12);
-    border-color: #a10800;
 }
 
 .card img{
@@ -190,7 +206,7 @@ header {
 
 .info4 > i:first-child{
     font-size: 32px;
-    color: #a7231b;
+    color: #a7231b ;
     margin-bottom: 12px;
 }
 
@@ -206,9 +222,9 @@ header {
     gap: 6px;
     min-height: 34px;
     padding: 6px 10px;
-    border: 2px solid #c41e1e;
+    border: 2px solid #a7231b ;
     border-radius: 6px;
-    color: #c41e1e;
+    color: #a7231b ;
     font-size: 13px;
     font-weight: 700;
     transition: background-color .3s, color .3s, transform .3s;
@@ -216,7 +232,7 @@ header {
 
 
 .categoria-btn:hover {
-    background: #c41e1e;
+    background:#a7231b;
     color: #fff;
     transform: translateY(-2px);
 }
@@ -252,6 +268,7 @@ header {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
+  padding: 0 0 50px
 }
 
 .categorias-texto2 p {
@@ -271,154 +288,29 @@ header {
   border-radius: 2px;
 }
 
-/* ===================== DESTAQUES ===================== */
+/* ===================== central ===================== */
 
-.destaques {
-  background: #07162f;
-  padding: 50px 7% 5%;
+.imagem-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.titulo {
-  text-align: center;
-  margin-bottom: 55px;
+.imagem-central img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: all 0.35s ease;
+    cursor: pointer;
 }
 
-.categorias-texto1 h4 {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 15px;
-
-  font-size: 14px;
-  font-weight: 600;
-
-  color: #ff0d00;
-
-  letter-spacing: 2px;
-
-  margin-bottom: 12px;
+.imagem-central img:hover {
+    transform: scale(1.01);
 }
-
-.categorias-texto1 h2 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.categorias-texto1 p {
-  color: #b9c2d3;
-  font-size: 1.05rem;
-}
-
-.categorias-texto1 h4::before,
-.categorias-texto1 h4::after {
-  content: "";
-
-  width: 45px;
-  height: 0.1px;
-
-  background: #ff0d00;
-
-  border-radius: 2px;
-}
-
-/* GRID */
-
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
-}
-
-/* CARD */
-
-.card-produto {
-  background: #0d1f3f;
-  border: 1px solid rgba(255, 31, 31, 0.35);
-  border-radius: 18px;
-  overflow: hidden;
-  transition: 0.35s;
-}
-
-.card-produto:hover {
-  transform: scale(1.01);
-  border-color: #a10800;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
-}
-
-.card-produto img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-}
-
-/* INFORMAÇÕES */
-
-.info {
-  padding: 25px;
-}
-
-.info h3 {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 18px;
-}
-
-/* descrição */
-
-.descricao {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  color: #c8d0df;
-  font-size: 1rem;
-
-  margin-bottom: 28px;
-}
-
-.descricao i {
-  color: #c70a00;
-  font-size: 22px;
-}
-
-/* botão */
-
-.btn-orcamento {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-
-  width: 100%;
-  height: 52px;
-
-  background: #c70a00;
-  color: #fff;
-
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 10px;
-
-  transition: 0.3s;
-}
-
-.btn-orcamento:hover {
-  background: #a10800;
-}
-
-.btn-orcamento i {
-  transition: 0.3s;
-}
-
-.btn-orcamento:hover i {
-  transform: translateX(6px);
-}
-
 
 /* ===================== VANTAGENS ===================== */
 
@@ -497,7 +389,7 @@ header {
 
   text-align: center;
 
-  border-right: 1px solid #a10800;
+  border-right: 1px solid #a7231b ;
 }
 
 .vantagem-item:last-child {
@@ -549,7 +441,7 @@ header {
   border-radius: 18px;
 
   background: #05132c;
-  color: #c8c8c8;
+  color: white;
 
   border: 3px solid #ff0d00;
 }
@@ -575,7 +467,7 @@ header {
 
   border-radius: 10px;
 
-  background: #a10800 ;
+  background:  #a7231b ;
   color: #fff;
 
   font-weight: 600;
@@ -584,7 +476,7 @@ header {
 }
 
 .vantagens-botao:hover {
-  background: #c70a00;
+  background:  #ff0d00 ;
 
   transform: scale(1.02);
 }
