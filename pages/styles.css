@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
-}                  
+}
 
 body {
   background: #fff;
@@ -34,7 +34,7 @@ header {
 .logo {
   position: absolute;
   width: 113px;
-  
+
   left: 50px;
   top: 10px;
 
@@ -86,35 +86,35 @@ header {
 /* ===================== ÍCONES HEADER ===================== */
 
 .icons-menu {
-    position: absolute;
-    z-index: 11;
-    padding-top: 40px;
+  position: absolute;
+  z-index: 11;
+  padding-top: 40px;
 
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    right: 80px;
+  right: 80px;
 }
 
 .icons-menu a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .icons-menu i {
-    font-size: 23px;
-    font-weight: 500;
-    color: white;
+  font-size: 23px;
+  font-weight: 500;
+  color: white;
 
-    transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .icons-menu a:hover i {
-    transform: translateY(-5px);
-    color: #a7231b;
+  transform: translateY(-5px);
+  color: #a7231b;
 }
 
 /* ===================== BANNER ===================== */
@@ -158,91 +158,91 @@ header {
   transform: translateX(6px);
 }
 
-
-
 /* ===================== CATEGORIAS ===================== */
 
-.categorias{
-    width:1200px;
-    margin:80px auto;
+.categorias {
+  width: 1200px;
+  margin: 80px auto;
 }
 
-.categorias h2{
-    text-align:center;
-    font-size:36px;
-    margin-bottom:40px;
+.categorias h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:20px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
-.card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    transition:.3s;
-    cursor:pointer;
-    border: 1px solid #a7231b;
+.card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #a7231b;
 }
 
-.card:hover{
-    transform: scale(1.02);
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
-.info4{
-    padding:20px;
-    text-align:center;
+.info4 {
+  padding: 20px;
+  text-align: center;
 }
 
-.info4 > i:first-child{
-    font-size: 32px;
-    color: #a7231b ;
-    margin-bottom: 12px;
+.info4 > i:first-child {
+  font-size: 32px;
+  color: #a7231b;
+  margin-bottom: 12px;
 }
 
-.info4 h3{
-    margin:15px 0 10px;
-    font-size:20px;
+.info4 h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
 }
 
 .categoria-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    min-height: 34px;
-    padding: 6px 10px;
-    border: 2px solid #a7231b ;
-    border-radius: 6px;
-    color: #a7231b ;
-    font-size: 13px;
-    font-weight: 700;
-    transition: background-color .3s, color .3s, transform .3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 2px solid #a7231b;
+  border-radius: 6px;
+  color: #a7231b;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
 }
 
-
 .categoria-btn:hover {
-    background:#a7231b;
-    color: #fff;
-    transform: translateY(-2px);
+  background: #a7231b;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .categoria-btn i {
-    transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .categoria-btn:hover i {
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .categorias-texto2 h4 {
@@ -268,7 +268,7 @@ header {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 15px;
-  padding: 0 0 50px
+  padding: 0 0 50px;
 }
 
 .categorias-texto2 p {
@@ -291,25 +291,25 @@ header {
 /* ===================== central ===================== */
 
 .imagem-central {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .imagem-central img {
-    width: auto;
-    height: 400px;
-    object-fit: cover;
+  width: auto;
+  height: 400px;
+  object-fit: cover;
 
-    border-radius: 20px;
+  border-radius: 20px;
 
-    transition: all 0.35s ease;
-    cursor: pointer;
+  transition: all 0.35s ease;
+  cursor: pointer;
 }
 
 .imagem-central img:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 /* ===================== VANTAGENS ===================== */
@@ -389,7 +389,7 @@ header {
 
   text-align: center;
 
-  border-right: 1px solid #a7231b ;
+  border-right: 1px solid #a7231b;
 }
 
 .vantagem-item:last-child {
@@ -467,7 +467,7 @@ header {
 
   border-radius: 10px;
 
-  background:  #a7231b ;
+  background: #a7231b;
   color: #fff;
 
   font-weight: 600;
@@ -476,7 +476,7 @@ header {
 }
 
 .vantagens-botao:hover {
-  background:  #ff0d00 ;
+  background: #ff0d00;
 
   transform: scale(1.02);
 }

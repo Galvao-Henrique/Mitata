@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MITATA</title>
@@ -8,13 +8,16 @@
     <!-- Links -->
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="icon" type="image/png" sizes="512x512" href="../Image/logoM.png">
-
-
+    <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../Image/logoM.png"
+    />
   </head>
-<body>
-
-       <!-- Header -->
+  <body>
+    <!-- Header -->
     <header>
       <img src="../Image/logo1.png" alt="Logo" class="logo" />
 
@@ -27,21 +30,283 @@
       </ul>
 
       <div class="icons-menu">
+        <a href="#" aria-label="Pesquisar">
+          <i class="ph ph-magnifying-glass"></i>
+        </a>
 
-    <a href="#" aria-label="Pesquisar">
-        <i class="ph ph-magnifying-glass"></i>
-    </a>
-
-    <a href="#" aria-label="Solicitar orçamento">
-        <i class="ph ph-chat-circle-dots"></i>
-    </a>
-
-</div>
+        <a href="#" aria-label="Solicitar orçamento">
+          <i class="ph ph-chat-circle-dots"></i>
+        </a>
+      </div>
     </header>
 
     <!-- Banner -->
-     <img src="Image/NProduto1.png" class="banner" />
-     <a href="#" class="banner-btn"> SOBRE NÓS <i class="ph ph-arrow-right"></i> </a>
-    
-</body>
+    <img src="Image/NProduto1.png" class="banner" />
+    <a href="#" class="banner-btn">
+      SOBRE NÓS <i class="ph ph-arrow-right"></i>
+    </a>
+
+    <!-- Produtos -->
+    <section class="produtos">
+      <aside class="sidebar">
+        <h2>Nossos Produtos</h2>
+
+        <button class="categoria ativo" data-filtro="todos">
+          <i class="ph ph-squares-four"></i>
+          Todos os Produtos
+        </button>
+
+        <button class="categoria" data-filtro="bovinos">
+          <i class="ph ph-cow"></i>
+          Bovinos
+        </button>
+
+        <button class="categoria" data-filtro="suinos">
+          <i class="ph ph-piggy-bank"></i>
+          Suínos
+        </button>
+
+        <button class="categoria" data-filtro="aves">
+          <i class="ph ph-bird"></i>
+          Aves
+        </button>
+
+        <button class="categoria" data-filtro="linguicas">
+          <i class="ph ph-fire"></i>
+          Linguiças
+        </button>
+
+        <div class="card-info">
+          <i class="ph-fill ph-seal-check"></i>
+
+          <h3>Qualidade Garantida</h3>
+
+          <p>
+            Trabalhamos somente com carnes selecionadas, garantindo frescor,
+            procedência e excelência.
+          </p>
+        </div>
+      </aside>
+
+      <div class="conteudo">
+        <div class="topo-produtos">
+          <p>Mostrando <strong>8 produtos</strong></p>
+        </div>
+
+        <div class="grid">
+          <!-- BOVINOS -->
+
+          <div class="produto" data-categoria="bovinos">
+            <img src="Image/figado.png" />
+
+            <div class="texto">
+              <h3>Fígago</h3>
+
+              <p>R$: 13,50 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <div class="produto" data-categoria="bovinos">
+            <img src="Image/lingua.png" />
+
+            <div class="texto">
+              <h3>Língua</h3>
+
+              <p>R$: 13,00 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <div class="produto" data-categoria="bovinos">
+            <img src="Image/rumem.png" />
+
+            <div class="texto">
+              <h3>Rumem</h3>
+
+              <p>R$: 15,00 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <!-- SUÍNOS -->
+
+          <div class="produto" data-categoria="suinos">
+            <img src="Image/costela.png" />
+
+            <div class="texto">
+              <h3>Costela c/ osso</h3>
+
+              <p>R$: 18,30 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <div class="produto" data-categoria="suinos">
+            <img src="Image/metade.png" />
+
+            <div class="texto">
+              <h3>Metade</h3>
+
+              <p>R$: 8,50 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <div class="produto" data-categoria="suinos">
+            <img src="Image/pernil com.png" />
+
+            <div class="texto">
+              <h3>Pernil c/pele c/osso</h3>
+
+              <p>R$: 13,80 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <div class="produto" data-categoria="suinos">
+            <img src="Image/pé.png" />
+
+            <div class="texto">
+              <h3>Pé</h3>
+
+              <p>R$: 8,50 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <div class="produto" data-categoria="suinos">
+            <img src="Image/barriga.png" />
+
+            <div class="texto">
+              <h3>Barriga</h3>
+
+              <p>R$: 18,30 Kg</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          
+
+          <!-- AVES -->
+
+          <div class="produto" data-categoria="aves">
+            <img src="Image/produtos/frango.jpg" />
+
+            <div class="texto">
+              <h3>Peito de Frango</h3>
+
+              <p>Corte selecionado e muito versátil.</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+          <!-- LINGUIÇAS -->
+
+          <div class="produto" data-categoria="linguicas">
+            <img src="Image/produtos/linguica.jpg" />
+
+            <div class="texto">
+              <h3>Linguiça Toscana</h3>
+
+              <p>Sabor tradicional e excelente rendimento.</p>
+
+              <span>
+                <i class="ph ph-package"></i>
+                Caixa / A granel
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== footer ===================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-col">
+          <img src="../Image/logo.png" alt="Mitata" class="footer-logo" />
+
+          <p>Há mais de 50 anos oferecendo carnes de qualidade.</p>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-col">
+          <h3>CONTATO</h3>
+
+          <ul>
+            <li>São José dos Campos - SP</li>
+            <li>(12) 99999-9999</li>
+            <li>contato@mitata.com.br</li>
+          </ul>
+        </div>
+
+        <!-- Navegação -->
+        <div class="footer-col">
+          <h3>INSTITUCIONAL</h3>
+
+          <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Redes -->
+        <div class="footer-col">
+          <h3>REDES SOCIAIS</h3>
+
+          <div class="footer-social">
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-whatsapp-logo"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Mitata Alimentos • Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
